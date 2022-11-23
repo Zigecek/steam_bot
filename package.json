@@ -1,0 +1,16 @@
+{
+  "name": "steam_bot",
+  "description": "",
+  "main": "steam.js",
+  "scripts": {
+    "start": "",
+    "i": "npm install dotenv@latest steam-totp@latest steam-user@latest",
+    "uni": "npm uninstall dotenv steam-totp steam-user"
+  },
+  "author": "Jan Kozohorský (kozohorsky.xyz)",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "steam-totp": "^2.1.2",
+    "steam-user": "^4.26.0"
+  }
+}
