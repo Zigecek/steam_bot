@@ -3,7 +3,7 @@
   "description": "",
   "main": "steam.js",
   "scripts": {
-    "start": "",
+    "start": "pm2 start ./steam.js --time -- trace-warnings",
     "i": "npm install dotenv@latest steam-totp@latest steam-user@latest",
     "uni": "npm uninstall dotenv steam-totp steam-user"
   },
