@@ -20,15 +20,17 @@ client.on("loggedOn", (details) => {
 client.on("playingState", (blocked) => {
   console.log("Blocked: " + blocked);
   if (blocked) {
-    setTimeout(() => {
-      process.exit(0);
-    }, 60 * 1000);
+    exit();
   }
 });
 
 client.on("error", (err) => {
   console.error(err);
-  if (err.eresult == steamUser.EResult.LoggedInElsewhere) {
-    process.exit(0);
-  }
+  exit();
 });
+
+function exit() {
+  setTimeout(() => {
+    process.exit(0);
+  }, 60 * 1000);
+}
